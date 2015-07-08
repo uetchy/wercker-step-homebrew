@@ -19,7 +19,7 @@ deploy:
         file: snapshot/solver_darwin_386.zip
     - uetchy/homebrew:
         token: $GITHUB_TOKEN
-        version: 1.0.0
+        tag: v1.0.0
         file64: snapshot/solver_darwin_amd64.zip
         file32: snapshot/solver_darwin_386.zip
 ```
@@ -30,12 +30,14 @@ There are all of available options.
 
 |option |description          |
 |-------|---------------------|
-|token  |Github access token  |
-|version|Formula's Version    |
+|token [$GITHUB_TOKEN]|Github access token  |
+|tag [$RELEASE_TAG]|Release tag          |
 |file64 |binary or package(64)|
 |file32 (optional)|binary or package(32)|
+|version (optional)|Formula's Version|
 |name (optional)|Formula repo |
 |owner (optional)|Owner of formula repo|
+|product-owner (optional)|Owner of product repo|
 |message (optional)|Commit message|
 
 ## Contributing
