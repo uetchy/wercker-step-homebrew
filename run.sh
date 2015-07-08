@@ -1,6 +1,6 @@
 #!/bin/sh
 
-SOLVER_VERSION="1.1.0"
+SOLVER_VERSION="1.1.1"
 
 if [ ! -n "$WERCKER_HOMEBREW_TOKEN" ]; then
   fail "Missing 'token' for Github API"
