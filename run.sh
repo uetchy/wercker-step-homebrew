@@ -15,10 +15,12 @@ file32="${WERCKER_HOMEBREW_FILE32}"
 committer="werckerbot"
 committer_email="pleasemailus@wercker.com"
 
+cd $WERCKER_STEP_ROOT
 curl -L https://github.com/uetchy/solver/releases/download/v${SOLVER_VERSION}/solver_linux_amd64.tar.gz -o ${WERCKER_STEP_ROOT}/solver_linux_amd64.tar.gz
-tar xzf ${WERCKER_STEP_ROOT}/solver_linux_amd64.tar.gz
+tar xzf solver_linux_amd64.tar.gz
 solver_bin=${WERCKER_STEP_ROOT}/solver_linux_amd64/solver
 
+cd $WERCKER_SOURCE_DIR
 ${solver_bin} push \
   --token $WERCKER_HOMEBREW_TOKEN \
   --name $name \
