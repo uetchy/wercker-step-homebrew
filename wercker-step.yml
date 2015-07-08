@@ -1,0 +1,21 @@
+name: homebrew
+version: 1.0.0
+decsription: Keep your Homebrew's formula fresh
+keywords:
+  - homebrew
+  - formula
+properties:
+  token:
+    type: string
+  name:
+    type: string
+  owner:
+    type: string
+  version:
+    type: string
+  message:
+    type: string
+  file64:
+    type: string
+  file32:
+    type: string
