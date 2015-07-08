@@ -22,12 +22,12 @@ solver_bin=${WERCKER_STEP_ROOT}/solver_linux_amd64/solver
 
 cd $WERCKER_SOURCE_DIR
 ${solver_bin} push \
-  --token $WERCKER_HOMEBREW_TOKEN \
-  --name $name \
-  --owner $owner \
-  --version $version \
-  --message $message \
-  --target-path-64 $file64 \
-  --target-path-32 $file32 \
-  --committer $committer \
-  --committer-email $committer_email
+  --token "${WERCKER_HOMEBREW_TOKEN}" \
+  --name "${$name}" \
+  --owner "${$owner}" \
+  --version "${$version}" \
+  --message "${$message}" \
+  --target-path-64 "${file64}" \
+  --target-path-32 "${file32}" \
+  --committer "${$committer}" \
+  --committer-email "${$committer_email}"
