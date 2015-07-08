@@ -27,4 +27,4 @@ ${solver_bin} push \
   --target-path-64 "${WERCKER_HOMEBREW_FILE64}" \
   --target-path-32 "${WERCKER_HOMEBREW_FILE32}" \
   --committer "werckerbot" \
-  --committer-email "pleasemailus@wercker.com
+  --committer-email "pleasemailus@wercker.com"
