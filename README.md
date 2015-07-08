@@ -24,6 +24,20 @@ deploy:
         file32: snapshot/solver_darwin_386.zip
 ```
 
+## Options
+
+There are all of available options.
+
+|option |description          |
+|-------|---------------------|
+|token  |Github access token  |
+|version|Formula's Version    |
+|file64 |binary or package(64)|
+|file32 (optional)|binary or package(32)|
+|name (optional)|Formula repo |
+|owner (optional)|Owner of formula repo|
+|message (optional)|Commit message|
+
 ## Contributing
 
 This step currently focusing on Golang project.
