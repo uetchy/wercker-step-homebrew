@@ -17,14 +17,14 @@ solver_bin=${WERCKER_STEP_ROOT}/solver_linux_amd64/solver
 
 cd $WERCKER_SOURCE_DIR
 ${solver_bin} push \
-  --token "${WERCKER_HOMEBREW_TOKEN}" \
-  --name "${name}" \
-  --owner "${owner}" \
-  --tag "${tag}" \
-  --product-owner "${WERCKER_GIT_OWNER}" \
-  --version "${WERCKER_HOMEBREW_VERSION}" \
-  --message "${WERCKER_HOMEBREW_MESSAGE}" \
-  --target-path-64 "${WERCKER_HOMEBREW_FILE64}" \
-  --target-path-32 "${WERCKER_HOMEBREW_FILE32}" \
+  --token "$WERCKER_HOMEBREW_TOKEN" \
+  --name "$name" \
+  --owner "$owner" \
+  --tag "$tag" \
+  --product-owner "$WERCKER_GIT_OWNER" \
+  --version "$WERCKER_HOMEBREW_VERSION" \
+  --message "$WERCKER_HOMEBREW_MESSAGE" \
+  --target-path-64 "$WERCKER_HOMEBREW_FILE64" \
+  --target-path-32 "$WERCKER_HOMEBREW_FILE32" \
   --committer "werckerbot" \
   --committer-email "pleasemailus@wercker.com"
