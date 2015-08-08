@@ -35,5 +35,5 @@ fi
 if [ ! -n "$WERCKER_HOMEBREW_TAG" ]; then
   warn "No 'tag' given. aborting"
 else
-  solve()
+  solve
 fi
