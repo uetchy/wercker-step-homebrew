@@ -4,8 +4,8 @@ if [ ! -n "$WERCKER_HOMEBREW_TOKEN" ]; then
   fail "Missing 'token' for Github API"
 fi
 
-if [ ! -n "$WERCKER_HOMEBREW_VERSION" ]; then
-  warn "No given 'version'. aborting"
+if [ ! -n "$WERCKER_HOMEBREW_TAG" ]; then
+  warn "No given 'tag'. aborting"
   exit
 fi
 
