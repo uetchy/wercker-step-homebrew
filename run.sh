@@ -5,8 +5,8 @@ if [ ! -n "$WERCKER_HOMEBREW_TOKEN" ]; then
 fi
 
 if [ ! -n "$WERCKER_HOMEBREW_TAG" ]; then
-  warn "No given 'tag'. aborting"
-  exit
+  warn "No 'tag' given. aborting"
+  exit 0
 fi
 
 SOLVER_VERSION="1.1.1"
