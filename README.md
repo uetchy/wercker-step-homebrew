@@ -1,6 +1,6 @@
 # wercker-step-homebrew
 
-Keep your Homebrew's formula fresh by using [solver](https://github.com/uetchy/solver).
+Keep your Homebrew's formula fresh using [solver](https://github.com/uetchy/solver).
 
 ## Usage
 
