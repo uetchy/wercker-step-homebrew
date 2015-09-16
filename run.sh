@@ -1,6 +1,6 @@
 #!/bin/sh
 
-function solve() {
+function pushToGithub() {
   SOLVER_VERSION="1.1.1"
   name="${WERCKER_HOMEBREW_NAME:-$WERCKER_GIT_REPOSITORY}"
   owner="${WERCKER_HOMEBREW_OWNER:-$WERCKER_GIT_OWNER}"
@@ -8,7 +8,7 @@ function solve() {
 
   # Setup solver
   cd $WERCKER_STEP_ROOT
-  curl -L https://github.com/uetchy/solver/releases/download/v${SOLVER_VERSION}/solver_linux_amd64.tar.gz -o ${WERCKER_STEP_ROOT}/solver_linux_amd64.tar.gz
+  curl -L https://github.com/uetchy/magicformula/releases/download/v${SOLVER_VERSION}/solver_linux_amd64.tar.gz -o ${WERCKER_STEP_ROOT}/solver_linux_amd64.tar.gz
   tar xzf solver_linux_amd64.tar.gz
   solver_bin=${WERCKER_STEP_ROOT}/solver_linux_amd64/solver
 
@@ -35,5 +35,5 @@ fi
 if [ ! -n "$WERCKER_HOMEBREW_TAG" ]; then
   warn "No 'tag' given. aborting"
 else
-  solve
+  pushToGithub
 fi

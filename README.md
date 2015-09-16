@@ -1,6 +1,6 @@
 # wercker-step-homebrew
 
-Keep your Homebrew's formula fresh using [solver](https://github.com/uetchy/solver).
+Keep your Homebrew's formula fresh using [magicformula](https://github.com/uetchy/magicformula).
 
 Example commit is [here](https://github.com/uetchy/homebrew-gst/commit/cd3ae8b1d4f8df9f8d41e120d384a5e41db9c139).
 
